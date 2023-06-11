@@ -1,8 +1,6 @@
-﻿using Order.Domain.Models;
-
-namespace Order.Domain.Entities
+﻿namespace Order.Application.DataContract.Request.RecipeImage
 {
-    public class RecipeImage : EntityBase
+    public class RecipeImageRequest
     {
         public Guid Codigo { get; set; }
         public Guid CodigoRecipe { get; set; }

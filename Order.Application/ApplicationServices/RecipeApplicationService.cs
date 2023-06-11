@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using Order.Application.DataContract.Request.Recipe;
+using Order.Application.DataContract.Request.RecipeImage;
 using Order.Application.DataContract.Response.Recipe;
+using Order.Application.DataContract.Response.RecipeImage;
 using Order.Application.Interfaces.Services;
 using Order.Domain.Entities;
 using Order.Domain.Interfaces.Repositories;
@@ -10,13 +12,17 @@ namespace Order.Application.ApplicationServices
     public class RecipeApplicationService : IRecipeApplicationService
     {
         private readonly IRecipeRepository _recipeRepository;
+        private readonly IRecipeImageRepository _recipeImageRepository;
         private readonly IMapper _mapper;
 
-        public RecipeApplicationService(IRecipeRepository recipeRepository, IMapper mapper)
+        public RecipeApplicationService(IRecipeImageRepository recipeImageRepository, IRecipeRepository recipeRepository, IMapper mapper)
         {
             _recipeRepository = recipeRepository;
+            _recipeImageRepository = recipeImageRepository;
             _mapper = mapper;
         }
+
+        #region Recipe
 
         public async Task<RecipeResponse> CadastrarReceita(RecipeRequest request)
         {
@@ -53,5 +59,32 @@ namespace Order.Application.ApplicationServices
 
             return response;
         }
+
+        #endregion
+
+        #region RecipeImage
+
+        public async Task CadastrarImagem(RecipeImageRequest request)
+        {
+            var recipeImage = _mapper.Map<RecipeImage>(request);
+
+            await _recipeImageRepository.Insert(recipeImage);
+        }
+
+        public async Task DeletarImagem(Guid codigoImage)
+        {
+            await _recipeImageRepository.Delete(codigoImage);
+        }
+
+        public async Task<RecipeImageResponse> GetImageByCode(Guid codigoImage)
+        {
+            var recipeImage = await _recipeImageRepository.GetById(codigoImage);
+
+            var response = _mapper.Map<RecipeImageResponse>(recipeImage);
+
+            return response;
+        }
+
+        #endregion
     }
 }
