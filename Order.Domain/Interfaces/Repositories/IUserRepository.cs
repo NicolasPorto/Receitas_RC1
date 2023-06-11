@@ -8,5 +8,6 @@ namespace Order.Domain.Interfaces.Repositories
         Task Update(User user);
         Task Delete(Guid userCode);
         Task<User> GetById(Guid userCode);
+        Task<bool> ExistById(Guid userCode);
     }
 }

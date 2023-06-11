@@ -1,0 +1,15 @@
+D:\Users\nicolas\Desktop\C#\Projeto RC1\RC1_Receitas\Order.Domain\bin\Debug\net6.0\Order.Domain.deps.json
+D:\Users\nicolas\Desktop\C#\Projeto RC1\RC1_Receitas\Order.Domain\bin\Debug\net6.0\Order.Domain.dll
+D:\Users\nicolas\Desktop\C#\Projeto RC1\RC1_Receitas\Order.Domain\bin\Debug\net6.0\Order.Domain.pdb
+D:\Users\nicolas\Desktop\C#\Projeto RC1\RC1_Receitas\Order.Domain\obj\Debug\net6.0\Order.Domain.csproj.AssemblyReference.cache
+D:\Users\nicolas\Desktop\C#\Projeto RC1\RC1_Receitas\Order.Domain\obj\Debug\net6.0\Order.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\nicolas\Desktop\C#\Projeto RC1\RC1_Receitas\Order.Domain\obj\Debug\net6.0\Order.Domain.AssemblyInfoInputs.cache
+D:\Users\nicolas\Desktop\C#\Projeto RC1\RC1_Receitas\Order.Domain\obj\Debug\net6.0\Order.Domain.AssemblyInfo.cs
+D:\Users\nicolas\Desktop\C#\Projeto RC1\RC1_Receitas\Order.Domain\obj\Debug\net6.0\Order.Domain.csproj.CoreCompileInputs.cache
+D:\Users\nicolas\Desktop\C#\Projeto RC1\RC1_Receitas\Order.Domain\obj\Debug\net6.0\Order.Domain.dll
+D:\Users\nicolas\Desktop\C#\Projeto RC1\RC1_Receitas\Order.Domain\obj\Debug\net6.0\refint\Order.Domain.dll
+D:\Users\nicolas\Desktop\C#\Projeto RC1\RC1_Receitas\Order.Domain\obj\Debug\net6.0\Order.Domain.pdb
+D:\Users\nicolas\Desktop\C#\Projeto RC1\RC1_Receitas\Order.Domain\obj\Debug\net6.0\ref\Order.Domain.dll
+D:\Users\nicolas\Desktop\C#\Projeto RC1\RC1_Receitas\Order.Domain\bin\Debug\net6.0\Order.Infra.dll
+D:\Users\nicolas\Desktop\C#\Projeto RC1\RC1_Receitas\Order.Domain\bin\Debug\net6.0\Order.Infra.pdb
+D:\Users\nicolas\Desktop\C#\Projeto RC1\RC1_Receitas\Order.Domain\obj\Debug\net6.0\Order.Domain.csproj.CopyComplete
