@@ -45,8 +45,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "AutoMapper": "12.0.1",
-          "FluentValidation": "11.5.2",
-          "Order.Infra": "1.0.0"
+          "FluentValidation": "11.5.2"
         },
         "compile": {
           "bin/placeholder/Order.Domain.dll": {}
@@ -58,6 +57,9 @@
       "Order.Infra/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Order.Domain": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Order.Infra.dll": {}
         },
@@ -189,7 +191,8 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "AutoMapper >= 12.0.1",
-      "Order.Domain >= 1.0.0"
+      "Order.Domain >= 1.0.0",
+      "Order.Infra >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -221,6 +224,9 @@
           "projectReferences": {
             "D:\\Users\\nicolas\\Desktop\\C#\\Projeto RC1\\RC1_Receitas\\Order.Domain\\Order.Domain.csproj": {
               "projectPath": "D:\\Users\\nicolas\\Desktop\\C#\\Projeto RC1\\RC1_Receitas\\Order.Domain\\Order.Domain.csproj"
+            },
+            "D:\\Users\\nicolas\\Desktop\\C#\\Projeto RC1\\RC1_Receitas\\Order.Infra\\Order.Infra.csproj": {
+              "projectPath": "D:\\Users\\nicolas\\Desktop\\C#\\Projeto RC1\\RC1_Receitas\\Order.Infra\\Order.Infra.csproj"
             }
           }
         }

@@ -109,6 +109,9 @@
             "projectReferences": {
               "D:\\Users\\nicolas\\Desktop\\C#\\Projeto RC1\\RC1_Receitas\\Order.Domain\\Order.Domain.csproj": {
                 "projectPath": "D:\\Users\\nicolas\\Desktop\\C#\\Projeto RC1\\RC1_Receitas\\Order.Domain\\Order.Domain.csproj"
+              },
+              "D:\\Users\\nicolas\\Desktop\\C#\\Projeto RC1\\RC1_Receitas\\Order.Infra\\Order.Infra.csproj": {
+                "projectPath": "D:\\Users\\nicolas\\Desktop\\C#\\Projeto RC1\\RC1_Receitas\\Order.Infra\\Order.Infra.csproj"
               }
             }
           }
@@ -171,11 +174,7 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {
-              "D:\\Users\\nicolas\\Desktop\\C#\\Projeto RC1\\RC1_Receitas\\Order.Infra\\Order.Infra.csproj": {
-                "projectPath": "D:\\Users\\nicolas\\Desktop\\C#\\Projeto RC1\\RC1_Receitas\\Order.Infra\\Order.Infra.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -240,7 +239,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Users\\nicolas\\Desktop\\C#\\Projeto RC1\\RC1_Receitas\\Order.Domain\\Order.Domain.csproj": {
+                "projectPath": "D:\\Users\\nicolas\\Desktop\\C#\\Projeto RC1\\RC1_Receitas\\Order.Domain\\Order.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

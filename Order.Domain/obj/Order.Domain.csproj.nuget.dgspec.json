@@ -27,11 +27,7 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {
-              "D:\\Users\\nicolas\\Desktop\\C#\\Projeto RC1\\RC1_Receitas\\Order.Infra\\Order.Infra.csproj": {
-                "projectPath": "D:\\Users\\nicolas\\Desktop\\C#\\Projeto RC1\\RC1_Receitas\\Order.Infra\\Order.Infra.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -53,61 +49,6 @@
               "version": "[11.5.2, )"
             }
           },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "D:\\Users\\nicolas\\Desktop\\C#\\Projeto RC1\\RC1_Receitas\\Order.Infra\\Order.Infra.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\Users\\nicolas\\Desktop\\C#\\Projeto RC1\\RC1_Receitas\\Order.Infra\\Order.Infra.csproj",
-        "projectName": "Order.Infra",
-        "projectPath": "D:\\Users\\nicolas\\Desktop\\C#\\Projeto RC1\\RC1_Receitas\\Order.Infra\\Order.Infra.csproj",
-        "packagesPath": "C:\\Users\\nicol\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\nicolas\\Desktop\\C#\\Projeto RC1\\RC1_Receitas\\Order.Infra\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\nicol\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net6.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",

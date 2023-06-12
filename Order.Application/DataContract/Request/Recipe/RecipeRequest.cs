@@ -1,4 +1,4 @@
-﻿using Order.Domain.Messaging.Api;
+﻿using Order.Application.Messaging.Api;
 
 namespace Order.Application.DataContract.Request.Recipe;
 

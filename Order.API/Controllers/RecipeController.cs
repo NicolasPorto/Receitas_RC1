@@ -4,11 +4,13 @@ using Order.Application.DataContract.Request.RecipeImage;
 using Order.Application.DataContract.Response.Recipe;
 using Order.Application.DataContract.Response.RecipeImage;
 using Order.Application.Interfaces.Services;
-using Order.Domain.Messaging.Api;
+using Order.Application.Messaging.Api;
 using Order.Infra.Exceptions;
 
 namespace Order.API.Controllers
 {
+    [Route("api/recipe")]
+    [ApiController]
     public class RecipeController : ControllerBase
     {
         private readonly IRecipeApplicationService _recipeApplicationService;

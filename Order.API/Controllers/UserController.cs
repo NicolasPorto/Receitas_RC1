@@ -2,7 +2,7 @@
 using Order.Application.DataContract.Request.User;
 using Order.Application.DataContract.Response.User;
 using Order.Application.Interfaces.Services;
-using Order.Domain.Messaging.Api;
+using Order.Application.Messaging.Api;
 using Order.Infra.Exceptions;
 
 namespace Order.API.Controllers

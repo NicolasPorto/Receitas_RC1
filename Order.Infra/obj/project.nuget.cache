@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "jvJnACj4svsBm02lIkg7mtPX6mTj3y44pqosX+dfgISzI5uLLBzTZCkipWtpAD5biKpIUfDUweEL/C8b66GJlQ==",
+  "dgSpecHash": "QQk8PmwGV5hU1wIpXNydNxSj6ygjZepiGFN0266EANgeWKZY3+hQzhstblA4r4j/NmxNEh2metkoGv7J4Uvbpw==",
   "success": true,
   "projectFilePath": "D:\\Users\\nicolas\\Desktop\\C#\\Projeto RC1\\RC1_Receitas\\Order.Infra\\Order.Infra.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\nicol\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\nicol\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
+    "C:\\Users\\nicol\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }

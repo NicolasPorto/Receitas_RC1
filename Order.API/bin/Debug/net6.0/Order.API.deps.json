@@ -114,7 +114,8 @@
       "Order.Application/1.0.0": {
         "dependencies": {
           "AutoMapper": "12.0.1",
-          "Order.Domain": "1.0.0"
+          "Order.Domain": "1.0.0",
+          "Order.Infra": "1.0.0"
         },
         "runtime": {
           "Order.Application.dll": {}
@@ -123,14 +124,16 @@
       "Order.Domain/1.0.0": {
         "dependencies": {
           "AutoMapper": "12.0.1",
-          "FluentValidation": "11.5.2",
-          "Order.Infra": "1.0.0"
+          "FluentValidation": "11.5.2"
         },
         "runtime": {
           "Order.Domain.dll": {}
         }
       },
       "Order.Infra/1.0.0": {
+        "dependencies": {
+          "Order.Domain": "1.0.0"
+        },
         "runtime": {
           "Order.Infra.dll": {}
         }

@@ -1,6 +1,6 @@
 ﻿using Order.Infra.Exceptions;
 
-namespace Order.Domain.Messaging.Api
+namespace Order.Application.Messaging.Api
 {
     [Serializable]
     public class ResponseBase : ResponseBase<ResponseBase>

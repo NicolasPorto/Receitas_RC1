@@ -10,3 +10,6 @@ D:\Users\nicolas\Desktop\C#\Projeto RC1\RC1_Receitas\Order.Infra\obj\Debug\net6.
 D:\Users\nicolas\Desktop\C#\Projeto RC1\RC1_Receitas\Order.Infra\obj\Debug\net6.0\refint\Order.Infra.dll
 D:\Users\nicolas\Desktop\C#\Projeto RC1\RC1_Receitas\Order.Infra\obj\Debug\net6.0\Order.Infra.pdb
 D:\Users\nicolas\Desktop\C#\Projeto RC1\RC1_Receitas\Order.Infra\obj\Debug\net6.0\ref\Order.Infra.dll
+D:\Users\nicolas\Desktop\C#\Projeto RC1\RC1_Receitas\Order.Infra\bin\Debug\net6.0\Order.Domain.dll
+D:\Users\nicolas\Desktop\C#\Projeto RC1\RC1_Receitas\Order.Infra\bin\Debug\net6.0\Order.Domain.pdb
+D:\Users\nicolas\Desktop\C#\Projeto RC1\RC1_Receitas\Order.Infra\obj\Debug\net6.0\Order.Infra.csproj.CopyComplete
