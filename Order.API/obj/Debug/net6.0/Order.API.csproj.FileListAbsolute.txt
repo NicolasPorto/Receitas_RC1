@@ -39,3 +39,11 @@ D:\Users\nicolas\Desktop\C#\Projeto RC1\RC1_Receitas\Order.API\bin\Debug\net6.0\
 D:\Users\nicolas\Desktop\C#\Projeto RC1\RC1_Receitas\Order.API\bin\Debug\net6.0\Order.Application.pdb
 D:\Users\nicolas\Desktop\C#\Projeto RC1\RC1_Receitas\Order.API\bin\Debug\net6.0\Order.Infra.pdb
 D:\Users\nicolas\Desktop\C#\Projeto RC1\RC1_Receitas\Order.API\bin\Debug\net6.0\Order.Domain.pdb
+D:\Users\nicolas\Desktop\C#\Projeto RC1\RC1_Receitas\Order.API\bin\Debug\net6.0\Dapper.dll
+D:\Users\nicolas\Desktop\C#\Projeto RC1\RC1_Receitas\Order.API\bin\Debug\net6.0\Dapper.Contrib.dll
+D:\Users\nicolas\Desktop\C#\Projeto RC1\RC1_Receitas\Order.API\bin\Debug\net6.0\System.Data.SqlClient.dll
+D:\Users\nicolas\Desktop\C#\Projeto RC1\RC1_Receitas\Order.API\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+D:\Users\nicolas\Desktop\C#\Projeto RC1\RC1_Receitas\Order.API\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+D:\Users\nicolas\Desktop\C#\Projeto RC1\RC1_Receitas\Order.API\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+D:\Users\nicolas\Desktop\C#\Projeto RC1\RC1_Receitas\Order.API\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Users\nicolas\Desktop\C#\Projeto RC1\RC1_Receitas\Order.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
