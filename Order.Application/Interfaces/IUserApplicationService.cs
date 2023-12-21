@@ -1,15 +1,13 @@
 ﻿using Order.Application.DataContract.Request.User;
 using Order.Application.DataContract.Response.User;
-using Order.Domain.Entities;
-using Order.Domain.Validations.Base;
 
 namespace Order.Application.Interfaces.Services
 {
     public interface IUserApplicationService
     {
-        Task<UserResponse> CadastrarUsuario(UserRequest request);
-        Task<UserResponse> AlterarUsuario(UserRequest request);
-        Task DeletarUsuario(Guid userCode);
-        Task<UserResponse> GetUsuarioByCode(Guid userCode);
+        Task<UserResponse> CreateUser(UserRequest request);
+        Task<UserResponse> UpdateUser(UserRequest request);
+        Task DeleteUser(Guid userCode);
+        Task<UserResponse> GetUserByCode(Guid userCode);
     }
 }

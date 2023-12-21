@@ -21,7 +21,7 @@ namespace Order.Application.ApplicationServices
             _mapper = mapper;
         }
 
-        public async Task<UserResponse> CadastrarUsuario(UserRequest request)
+        public async Task<UserResponse> CreateUser(UserRequest request)
         {
             var userRequest = _mapper.Map<User>(request);
 
@@ -33,12 +33,10 @@ namespace Order.Application.ApplicationServices
 
             await _userRepository.Insert(userRequest);
 
-            var response = _mapper.Map<UserResponse>(userRequest);
-
-            return response;
+            return _mapper.Map<UserResponse>(userRequest);
         }
 
-        public async Task<UserResponse> AlterarUsuario(UserRequest request)
+        public async Task<UserResponse> UpdateUser(UserRequest request)
         {
             var userRequest = _mapper.Map<User>(request);
 
@@ -55,23 +53,19 @@ namespace Order.Application.ApplicationServices
 
             await _userRepository.Update(userRequest);
 
-            var response = _mapper.Map<UserResponse>(userRequest);
-
-            return response;
+            return _mapper.Map<UserResponse>(userRequest);
         }
 
-        public async Task DeletarUsuario(Guid userCode)
+        public async Task DeleteUser(Guid userCode)
         {
             await _userRepository.Delete(userCode);
         }
 
-        public async Task<UserResponse> GetUsuarioByCode(Guid userCode)
+        public async Task<UserResponse> GetUserByCode(Guid userCode)
         {
             var user = await _userRepository.GetById(userCode);
 
-            var response = _mapper.Map<UserResponse>(user);
-
-            return response;
+            return _mapper.Map<UserResponse>(user);
         }
     }     
 }

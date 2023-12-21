@@ -24,7 +24,7 @@ namespace Order.Application.ApplicationServices
 
         #region Recipe
 
-        public async Task<RecipeResponse> RegisterRecipe(RecipeRequest request)
+        public async Task<RecipeResponse> CreateRecipe(RecipeRequest request)
         {
             var recipe = _mapper.Map<Recipe>(request);
 
@@ -33,7 +33,7 @@ namespace Order.Application.ApplicationServices
             return _mapper.Map<RecipeResponse>(recipe);
         }
 
-        public async Task<RecipeResponse> ChangeRecipe(RecipeRequest request)
+        public async Task<RecipeResponse> UpdateRecipe(RecipeRequest request)
         {
             var recipe = _mapper.Map<Recipe>(request);
 
@@ -47,7 +47,7 @@ namespace Order.Application.ApplicationServices
             await _recipeRepository.Delete(recipeCode);
         }
 
-        public async Task<RecipeResponse> SearchRecipeByCode(Guid recipeCode)
+        public async Task<RecipeResponse> GetRecipeByCode(Guid recipeCode)
         {
             var recipe = await _recipeRepository.GetById(recipeCode);
 
@@ -58,7 +58,7 @@ namespace Order.Application.ApplicationServices
 
         #region RecipeImage
 
-        public async Task RegisterImage(RecipeImageRequest request)
+        public async Task CreateImageRecipe(RecipeImageRequest request)
         {
             var recipeImage = _mapper.Map<RecipeImage>(request);
 

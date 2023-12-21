@@ -18,88 +18,88 @@ namespace Order.API.Controllers
             _userApplicationService = userApplicationService;
         }
 
-        [HttpGet("{codigo}")]
-        public async Task<ActionResult<UserResponse>> SearchUserByCode(Guid userCode)
+        [HttpGet("{code}")]
+        public async Task<ActionResult<UserResponse>> GetUserByCode(Guid userCode)
         {
             try
             {
-                var response = await _userApplicationService.GetUsuarioByCode(userCode);
+                var response = await _userApplicationService.GetUserByCode(userCode);
 
-                if (response.Sucesso)
+                if (response.Success)
                     return Ok(response);
 
                 return BadRequest(response);
             }
-            catch (RCException rcEx)
+            catch (RCException ex)
             {
-                return BadRequest(ResponseBase.ErroTratado(rcEx));
+                return BadRequest(ResponseBase.ErrorHandled(ex));
             }
             catch (Exception)
             {
-                return BadRequest(ResponseBase.ErroGenerico());
+                return StatusCode(StatusCodes.Status500InternalServerError, ResponseBase.GenericError());
             }
         }
 
         [HttpPost]
-        public async Task<ActionResult<UserResponse>> CadastrarUsuario(UserRequest request)
+        public async Task<ActionResult<UserResponse>> CreateUser(UserRequest request)
         {
             try
             {
-                var response = await _userApplicationService.CadastrarUsuario(request);
+                var response = await _userApplicationService.CreateUser(request);
 
-                if (response.Sucesso)
+                if (response.Success)
                     return Ok(response);
 
                 return BadRequest(response);
             }
-            catch (RCException rcEx)
+            catch (RCException ex)
             {
-                return BadRequest(ResponseBase.ErroTratado(rcEx));
+                return BadRequest(ResponseBase.ErrorHandled(ex));
             }
             catch (Exception)
             {
-                return BadRequest(ResponseBase.ErroGenerico());
+                return StatusCode(StatusCodes.Status500InternalServerError, ResponseBase.GenericError());
             }
         }
 
         [HttpPut]
-        public async Task<ActionResult<UserResponse>> AlterarUsuario(UserRequest request)
+        public async Task<ActionResult<UserResponse>> UpdateUser(UserRequest request)
         {
             try
             {
-                var response = await _userApplicationService.AlterarUsuario(request);
+                var response = await _userApplicationService.UpdateUser(request);
 
-                if (response.Sucesso)
+                if (response.Success)
                     return Ok(response);
 
                 return BadRequest(response);
             }
-            catch (RCException rcEx)
+            catch (RCException ex)
             {
-                return BadRequest(ResponseBase.ErroTratado(rcEx));
+                return BadRequest(ResponseBase.ErrorHandled(ex));
             }
             catch (Exception)
             {
-                return BadRequest(ResponseBase.ErroGenerico());
+                return StatusCode(StatusCodes.Status500InternalServerError, ResponseBase.GenericError());
             }
         }
 
-        [HttpDelete("{codigo}")]
-        public async Task<ActionResult> DeletarUsuario(Guid codigoUser)
+        [HttpDelete("{code}")]
+        public async Task<ActionResult> DeleteUser(Guid userCode)
         {
             try
             {
-                await _userApplicationService.DeletarUsuario(codigoUser);
+                await _userApplicationService.DeleteUser(userCode);
 
                 return Ok();
             }
-            catch (RCException rcEx)
+            catch (RCException ex)
             {
-                return BadRequest(ResponseBase.ErroTratado(rcEx));
+                return BadRequest(ResponseBase.ErrorHandled(ex));
             }
             catch (Exception)
             {
-                return BadRequest(ResponseBase.ErroGenerico());
+                return StatusCode(StatusCodes.Status500InternalServerError, ResponseBase.GenericError());
             }
         }
     }

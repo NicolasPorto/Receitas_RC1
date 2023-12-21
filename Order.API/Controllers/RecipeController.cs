@@ -20,12 +20,12 @@ namespace Order.API.Controllers
             _recipeApplicationService = recipeApplicationService;
         }
 
-        [HttpGet("{code}")]
-        public async Task<ActionResult<RecipeResponse>> SearchRecipeByCode(Guid recipeCode)
+        [HttpGet("Recipe/{code}")]
+        public async Task<ActionResult<RecipeResponse>> GetRecipeByCode(Guid recipeCode)
         {
             try
             {
-                var response = await _recipeApplicationService.SearchRecipeByCode(recipeCode);
+                var response = await _recipeApplicationService.GetRecipeByCode(recipeCode);
 
                 if (response.Success)
                     return Ok(response);
@@ -42,12 +42,12 @@ namespace Order.API.Controllers
             }
         }
 
-        [HttpPost]
-        public async Task<ActionResult<RecipeResponse>> RegisterRecipe(RecipeRequest request)
+        [HttpPost("Recipe")]
+        public async Task<ActionResult<RecipeResponse>> CreateRecipe(RecipeRequest request)
         {
             try
             {
-                var response = await _recipeApplicationService.RegisterRecipe(request);
+                var response = await _recipeApplicationService.CreateRecipe(request);
 
                 if (response.Success)
                     return Ok(response);
@@ -64,12 +64,12 @@ namespace Order.API.Controllers
             }
         }
 
-        [HttpPut]
-        public async Task<ActionResult<RecipeResponse>> ChangeRecipe(RecipeRequest request)
+        [HttpPut("Recipe")]
+        public async Task<ActionResult<RecipeResponse>> UpdateRecipe(RecipeRequest request)
         {
             try
             {
-                var response = await _recipeApplicationService.ChangeRecipe(request);
+                var response = await _recipeApplicationService.UpdateRecipe(request);
 
                 if (response.Success)
                     return Ok(response);
@@ -86,7 +86,7 @@ namespace Order.API.Controllers
             }
         }
 
-        [HttpDelete("{code}")]
+        [HttpDelete("Recipe/{code}")]
         public async Task<ActionResult> DeleteRecipe(Guid recipeCode)
         {
             try
@@ -105,12 +105,12 @@ namespace Order.API.Controllers
             }
         }
 
-        [HttpPost]
-        public async Task<ActionResult> RegisterImageRecipe(RecipeImageRequest request)
+        [HttpPost("RecipeImage")]
+        public async Task<ActionResult> CreateImageRecipe(RecipeImageRequest request)
         {
             try
             {
-                await _recipeApplicationService.RegisterImage(request);
+                await _recipeApplicationService.CreateImageRecipe(request);
 
                 return Ok();
             }
@@ -124,8 +124,8 @@ namespace Order.API.Controllers
             }
         }
 
-        [HttpGet("{code}")]
-        public async Task<ActionResult<RecipeImageResponse>> BuscarImagemReceitaByCodigo(Guid imageCode)
+        [HttpGet("RecipeImage/{code}")]
+        public async Task<ActionResult<RecipeImageResponse>> GetImageByCode(Guid imageCode)
         {
             try
             {
@@ -146,7 +146,7 @@ namespace Order.API.Controllers
             }
         }
 
-        [HttpDelete("{code}")]
+        [HttpDelete("RecipeImage/{code}")]
         public async Task<ActionResult> DeleteRecipeImage(Guid imageCode)
         {
             try
