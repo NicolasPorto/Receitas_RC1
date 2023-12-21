@@ -1,4 +1,7 @@
-﻿using Order.Application.Interfaces.Services;
+﻿using AutoMapper;
+using Order.Application.DataContract.Request.RecipeImage;
+using Order.Application.DataContract.Response.RecipeImage;
+using Order.Application.Interfaces.Services;
 using Order.Domain.Entities;
 using Order.Domain.Interfaces.Repositories;
 
@@ -7,25 +10,31 @@ namespace Order.Application.ApplicationServices
     public class RecipeImageApplicationService : IRecipeImageApplicationService
     {
         private readonly IRecipeImageRepository _recipeImageRepository;
+        private readonly IMapper _mapper;
 
-        public RecipeImageApplicationService(IRecipeImageRepository recipeImageRepository)
+        public RecipeImageApplicationService(IRecipeImageRepository recipeImageRepository, IMapper mapper)
         {
             _recipeImageRepository = recipeImageRepository;
+            _mapper = mapper;
         }
 
-        public Task CadastrarImagem(RecipeImage image)
+        public async Task CreateImageRecipe(RecipeImageRequest request)
         {
-            return _recipeImageRepository.Insert(image);
+            var recipeImage = _mapper.Map<RecipeImage>(request);
+
+            await _recipeImageRepository.Insert(recipeImage);
         }
 
-        public Task DeletarImagem(RecipeImage image)
+        public async Task DeleteImagem(Guid imageCode)
         {
-            return _recipeImageRepository.Delete(image.Codigo);
+            await _recipeImageRepository.Delete(imageCode);
         }
 
-        public Task GetImageByCode(Guid imageCode)
+        public async Task<RecipeImageResponse> GetImageByCode(Guid imageCode)
         {
-            return _recipeImageRepository.GetById(imageCode);
+            var recipeImage = await _recipeImageRepository.GetById(imageCode);
+
+            return _mapper.Map<RecipeImageResponse>(recipeImage);
         }
     }
 }

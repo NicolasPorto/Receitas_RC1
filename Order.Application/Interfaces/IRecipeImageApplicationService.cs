@@ -1,11 +1,12 @@
-﻿using Order.Domain.Entities;
+﻿using Order.Application.DataContract.Request.RecipeImage;
+using Order.Application.DataContract.Response.RecipeImage;
 
 namespace Order.Application.Interfaces.Services
 {
     public interface IRecipeImageApplicationService
     {
-        Task CadastrarImagem(RecipeImage image);
-        Task DeletarImagem(RecipeImage image);
-        Task GetImageByCode(Guid imageCode);
+        Task CreateImageRecipe(RecipeImageRequest request);
+        Task DeleteImagem(Guid imageCode);
+        Task<RecipeImageResponse> GetImageByCode(Guid imageCode);
     }
 }

@@ -10,12 +10,12 @@ using Order.Infra.Exceptions;
 
 namespace Order.Application.ApplicationServices
 {
-    public class UserService : IUserApplicationService
+    public class UserApplicationService : IUserApplicationService
     {
         private readonly IUserRepository _userRepository;
         private readonly IMapper _mapper;
 
-        public UserService(IUserRepository userRepository, IMapper mapper) 
+        public UserApplicationService(IUserRepository userRepository, IMapper mapper) 
         {
             _userRepository = userRepository;
             _mapper = mapper;

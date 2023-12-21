@@ -1,8 +1,6 @@
 ﻿using AutoMapper;
 using Order.Application.DataContract.Request.Recipe;
-using Order.Application.DataContract.Request.RecipeImage;
 using Order.Application.DataContract.Response.Recipe;
-using Order.Application.DataContract.Response.RecipeImage;
 using Order.Application.Interfaces.Services;
 using Order.Domain.Entities;
 using Order.Domain.Interfaces.Repositories;
@@ -12,17 +10,13 @@ namespace Order.Application.ApplicationServices
     public class RecipeApplicationService : IRecipeApplicationService
     {
         private readonly IRecipeRepository _recipeRepository;
-        private readonly IRecipeImageRepository _recipeImageRepository;
         private readonly IMapper _mapper;
 
-        public RecipeApplicationService(IRecipeImageRepository recipeImageRepository, IRecipeRepository recipeRepository, IMapper mapper)
+        public RecipeApplicationService(IRecipeRepository recipeRepository, IMapper mapper)
         {
             _recipeRepository = recipeRepository;
-            _recipeImageRepository = recipeImageRepository;
             _mapper = mapper;
         }
-
-        #region Recipe
 
         public async Task<RecipeResponse> CreateRecipe(RecipeRequest request)
         {
@@ -53,30 +47,5 @@ namespace Order.Application.ApplicationServices
 
             return _mapper.Map<RecipeResponse>(recipe);
         }
-
-        #endregion
-
-        #region RecipeImage
-
-        public async Task CreateImageRecipe(RecipeImageRequest request)
-        {
-            var recipeImage = _mapper.Map<RecipeImage>(request);
-
-            await _recipeImageRepository.Insert(recipeImage);
-        }
-
-        public async Task DeleteImagem(Guid imageCode)
-        {
-            await _recipeImageRepository.Delete(imageCode);
-        }
-
-        public async Task<RecipeImageResponse> GetImageByCode(Guid imageCode)
-        {
-            var recipeImage = await _recipeImageRepository.GetById(imageCode);
-
-            return _mapper.Map<RecipeImageResponse>(recipeImage);
-        }
-
-        #endregion
     }
 }
