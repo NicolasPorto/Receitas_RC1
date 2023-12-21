@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0t9q79zKLGnpF5x7nt8/uvCotEWQ9OZZdABeFqzzp7DJO1jQ997qyAnFXTIi4alNBe17Dwv18ASDggbdZsuvcg==",
+  "dgSpecHash": "oKNie4GPyBO9dXNSYalXpvQkvAIlaQg2X55trM/ruMH4K1r9BxGI5Avl54v8WBIQZduWXWZbQG9+tgtnFtUA5g==",
   "success": true,
-  "projectFilePath": "D:\\Users\\nicolas\\Desktop\\C#\\Projeto RC1\\RC1_Receitas\\Order.Application\\Order.Application.csproj",
+  "projectFilePath": "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.Application\\Order.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nicol\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\nicol\\.nuget\\packages\\dapper\\2.0.78\\dapper.2.0.78.nupkg.sha512",

@@ -19,11 +19,11 @@ namespace Order.API.Controllers
         }
 
         [HttpGet("{codigo}")]
-        public async Task<ActionResult<UserResponse>> BuscarUsuarioByCodigo(Guid codigoUser) 
+        public async Task<ActionResult<UserResponse>> SearchUserByCode(Guid userCode)
         {
             try
             {
-                var response = await _userApplicationService.GetUsuarioByCode(codigoUser);
+                var response = await _userApplicationService.GetUsuarioByCode(userCode);
 
                 if (response.Sucesso)
                     return Ok(response);
@@ -52,14 +52,14 @@ namespace Order.API.Controllers
 
                 return BadRequest(response);
             }
-            catch (RCException rcEx) 
+            catch (RCException rcEx)
             {
                 return BadRequest(ResponseBase.ErroTratado(rcEx));
             }
             catch (Exception)
             {
                 return BadRequest(ResponseBase.ErroGenerico());
-            }   
+            }
         }
 
         [HttpPut]
@@ -85,7 +85,7 @@ namespace Order.API.Controllers
         }
 
         [HttpDelete("{codigo}")]
-        public async Task<ActionResult> DeletarUsuario(Guid codigoUser) 
+        public async Task<ActionResult> DeletarUsuario(Guid codigoUser)
         {
             try
             {
@@ -103,4 +103,4 @@ namespace Order.API.Controllers
             }
         }
     }
-}   
+}

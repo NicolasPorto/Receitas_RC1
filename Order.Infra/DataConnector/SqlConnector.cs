@@ -13,7 +13,6 @@ namespace Order.Infra.DataConnector
         }
 
         public IDbConnection DbConnection { get; }
-
         public IDbTransaction DbTransaction { get; set; }
 
         public void Dispose()

@@ -1,4 +1,5 @@
 ﻿using Order.Domain.Entities;
+using Order.Domain.Interfaces.DataConnector;
 using Order.Domain.Interfaces.Repositories;
 using System.Data;
 
@@ -6,11 +7,11 @@ namespace Order.Infra.Repositories
 {
     public class RecipeImageRepository : IRecipeImageRepository
     {
-        private readonly IDbConnection _dbConnection;
+        private readonly IDbConnector _dbConnector;
 
-        public RecipeImageRepository(IDbConnection dbConnection) 
+        public RecipeImageRepository(IDbConnector dbConnector) 
         {
-            _dbConnection = dbConnection;
+            _dbConnector = dbConnector;
         }
 
         public Task Delete(Guid recipeImageCode)

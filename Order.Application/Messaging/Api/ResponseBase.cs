@@ -12,43 +12,42 @@ namespace Order.Application.Messaging.Api
     {
         public ResponseBase()
         {
-            Sucesso = true;
-            Mensagem = string.Empty;
+            Success = true;
+            Message = string.Empty;
         }
 
-        public ResponseBase(bool sucesso, string mensagem)
+        public ResponseBase(bool success, string message)
         {
-            Sucesso = sucesso;
-            Mensagem = mensagem;
+            Success = success;
+            Message = message;
         }
 
-        public bool Sucesso { get; set; }
-        public string Mensagem { get; set; }
+        public bool Success { get; set; }
+        public string Message { get; set; }
 
-        public void SetErroGenerico()
+        public void SetGenericError()
         {
-            Sucesso = false;
-            Mensagem = "Ocorreu um erro na requisição.";
+            Success = false;
+            Message = "Unknown error.";
         }
 
-        public void SetErroTratado(RCException ex)
+        public void SetErrorHandled(RCException ex)
         {
-            Sucesso = false;
-            Mensagem = ex.Message;
+            Success = false;
+            Message = ex.Message;
         }
 
-
-        public static TResponse ErroGenerico()
+        public static TResponse GenericError()
         {
             var response = Activator.CreateInstance<TResponse>();
-            response.SetErroGenerico();
+            response.SetGenericError();
             return response;
         }
 
-        public static TResponse ErroTratado(RCException spbEx)
+        public static TResponse ErrorHandled(RCException ex)
         {
             var response = Activator.CreateInstance<TResponse>();
-            response.SetErroTratado(spbEx);
+            response.SetErrorHandled(ex);
             return response;
         }
     }

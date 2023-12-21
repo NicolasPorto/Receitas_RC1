@@ -20,149 +20,148 @@ namespace Order.API.Controllers
             _recipeApplicationService = recipeApplicationService;
         }
 
-        // GET: RecipeController
-        [HttpGet("{codigo}")]
-        public async Task<ActionResult<RecipeResponse>> BuscarReceitaByCodigo(Guid codigoRecipe)
+        [HttpGet("{code}")]
+        public async Task<ActionResult<RecipeResponse>> SearchRecipeByCode(Guid recipeCode)
         {
             try
             {
-                var response = await _recipeApplicationService.GetReceitaByCode(codigoRecipe);
+                var response = await _recipeApplicationService.SearchRecipeByCode(recipeCode);
 
-                if (response.Sucesso)
+                if (response.Success)
                     return Ok(response);
 
                 return BadRequest(response);
             }
-            catch (RCException rcEx)
+            catch (RCException ex)
             {
-                return BadRequest(ResponseBase.ErroTratado(rcEx));
+                return BadRequest(ResponseBase.ErrorHandled(ex));
             }
             catch (Exception)
             {
-                return BadRequest(ResponseBase.ErroGenerico());
+                return StatusCode(StatusCodes.Status500InternalServerError, ResponseBase.GenericError());
             }
         }
 
         [HttpPost]
-        public async Task<ActionResult<RecipeResponse>> CadastrarReceita(RecipeRequest request)
+        public async Task<ActionResult<RecipeResponse>> RegisterRecipe(RecipeRequest request)
         {
             try
             {
-                var response = await _recipeApplicationService.CadastrarReceita(request);
+                var response = await _recipeApplicationService.RegisterRecipe(request);
 
-                if (response.Sucesso)
+                if (response.Success)
                     return Ok(response);
 
                 return BadRequest(response);
             }
-            catch (RCException rcEx)
+            catch (RCException ex)
             {
-                return BadRequest(ResponseBase.ErroTratado(rcEx));
+                return BadRequest(ResponseBase.ErrorHandled(ex));
             }
             catch (Exception)
             {
-                return BadRequest(ResponseBase.ErroGenerico());
+                return StatusCode(StatusCodes.Status500InternalServerError, ResponseBase.GenericError());
             }
         }
 
         [HttpPut]
-        public async Task<ActionResult<RecipeResponse>> AlterarReceita(RecipeRequest request)
+        public async Task<ActionResult<RecipeResponse>> ChangeRecipe(RecipeRequest request)
         {
             try
             {
-                var response = await _recipeApplicationService.AlterarReceita(request);
+                var response = await _recipeApplicationService.ChangeRecipe(request);
 
-                if (response.Sucesso)
+                if (response.Success)
                     return Ok(response);
 
                 return BadRequest(response);
             }
-            catch (RCException rcEx)
+            catch (RCException ex)
             {
-                return BadRequest(ResponseBase.ErroTratado(rcEx));
+                return BadRequest(ResponseBase.ErrorHandled(ex));
             }
             catch (Exception)
             {
-                return BadRequest(ResponseBase.ErroGenerico());
+                return StatusCode(StatusCodes.Status500InternalServerError, ResponseBase.GenericError());
             }
         }
 
-        [HttpDelete("{codigo}")]
-        public async Task<ActionResult> DeletarUsuario(Guid codigoRecipe)
+        [HttpDelete("{code}")]
+        public async Task<ActionResult> DeleteRecipe(Guid recipeCode)
         {
             try
             {
-                await _recipeApplicationService.DeletarReceita(codigoRecipe);
+                await _recipeApplicationService.DeleteRecipe(recipeCode);
 
                 return Ok();
             }
-            catch (RCException rcEx)
+            catch (RCException ex)
             {
-                return BadRequest(ResponseBase.ErroTratado(rcEx));
+                return BadRequest(ResponseBase.ErrorHandled(ex));
             }
             catch (Exception)
             {
-                return BadRequest(ResponseBase.ErroGenerico());
+                return StatusCode(StatusCodes.Status500InternalServerError, ResponseBase.GenericError());
             }
         }
 
         [HttpPost]
-        public async Task<ActionResult> CadastrarImagemReceita(RecipeImageRequest request)
+        public async Task<ActionResult> RegisterImageRecipe(RecipeImageRequest request)
         {
             try
             {
-                await _recipeApplicationService.CadastrarImagem(request);
+                await _recipeApplicationService.RegisterImage(request);
 
                 return Ok();
             }
-            catch (RCException rcEx)
+            catch (RCException ex)
             {
-                return BadRequest(ResponseBase.ErroTratado(rcEx));
+                return BadRequest(ResponseBase.ErrorHandled(ex));
             }
             catch (Exception)
             {
-                return BadRequest(ResponseBase.ErroGenerico());
+                return StatusCode(StatusCodes.Status500InternalServerError, ResponseBase.GenericError());
             }
         }
 
-        [HttpGet("{codigo}")]
-        public async Task<ActionResult<RecipeImageResponse>> BuscarImagemReceitaByCodigo(Guid codigoImage)
+        [HttpGet("{code}")]
+        public async Task<ActionResult<RecipeImageResponse>> BuscarImagemReceitaByCodigo(Guid imageCode)
         {
             try
             {
-                var response = await _recipeApplicationService.GetImageByCode(codigoImage);
+                var response = await _recipeApplicationService.GetImageByCode(imageCode);
 
-                if (response.Sucesso)
+                if (response.Success)
                     return Ok(response);
 
                 return BadRequest(response);
             }
-            catch (RCException rcEx)
+            catch (RCException ex)
             {
-                return BadRequest(ResponseBase.ErroTratado(rcEx));
+                return BadRequest(ResponseBase.ErrorHandled(ex));
             }
             catch (Exception)
             {
-                return BadRequest(ResponseBase.ErroGenerico());
+                return StatusCode(StatusCodes.Status500InternalServerError, ResponseBase.GenericError());
             }
         }
 
-        [HttpDelete("{codigo}")]
-        public async Task<ActionResult> DeletarImagemReceita(Guid codigoImage)
+        [HttpDelete("{code}")]
+        public async Task<ActionResult> DeleteRecipeImage(Guid imageCode)
         {
             try
             {
-                await _recipeApplicationService.DeletarImagem(codigoImage);
+                await _recipeApplicationService.DeleteImagem(imageCode);
 
                 return Ok();
             }
-            catch (RCException rcEx)
+            catch (RCException ex)
             {
-                return BadRequest(ResponseBase.ErroTratado(rcEx));
+                return BadRequest(ResponseBase.ErrorHandled(ex));
             }
             catch (Exception)
             {
-                return BadRequest(ResponseBase.ErroGenerico());
+                return StatusCode(StatusCodes.Status500InternalServerError, ResponseBase.GenericError());
             }
         }
     }

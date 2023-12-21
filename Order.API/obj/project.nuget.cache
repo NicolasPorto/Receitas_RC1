@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qaY7Gn+Y7NwyuaomgHOeXHAxEGfucsr/g4fj2vmKJxZzObtWiRVyoWWLBz6mYd7WrCv64DlB5kDHtvrBIqAb3Q==",
+  "dgSpecHash": "cH+pQYjyRkd58rZR+ITK9nx3eb4yBafnPP1sFCarlXLzcuGMAL5Qf47DWhs+o7+fNo25AyM2p0pQWpmDofW4sg==",
   "success": true,
-  "projectFilePath": "D:\\Users\\nicolas\\Desktop\\C#\\Projeto RC1\\RC1_Receitas\\Order.API\\Order.API.csproj",
+  "projectFilePath": "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.API\\Order.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nicol\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\nicol\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

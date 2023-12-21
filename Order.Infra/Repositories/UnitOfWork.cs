@@ -9,12 +9,13 @@ namespace Order.Infra.Repositories
         private IRecipeRepository _recipeRepository;
         private IRecipeImageRepository _recipeImageRepository;
 
-        public IRecipeImageRepository RecipeImageRepository => _recipeImageRepository ?? (_recipeImageRepository = new RecipeImageRepository(DbConnector.DbConnection));
-        public IRecipeRepository RecipeRepository => _recipeRepository ?? (_recipeRepository = new RecipeRepository(DbConnector.DbConnection));
+        public IRecipeImageRepository RecipeImageRepository => _recipeImageRepository ?? (_recipeImageRepository = new RecipeImageRepository(DbConnector));
 
-        public IUserRepository UserRepository => _userRepository ?? (_userRepository = new UserRepository(DbConnector.DbConnection));
+        public IRecipeRepository RecipeRepository => _recipeRepository ?? (_recipeRepository = new RecipeRepository(DbConnector));
 
-        public IDbConnector DbConnector => throw new NotImplementedException();
+        public IUserRepository UserRepository => _userRepository ?? (_userRepository = new UserRepository(DbConnector));
+
+        public IDbConnector DbConnector { get; }
 
         public void BeginTransaction()
         {

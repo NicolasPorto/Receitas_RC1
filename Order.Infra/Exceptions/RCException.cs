@@ -21,6 +21,7 @@ namespace Order.Infra.Exceptions
         {
             GeraEventLog = geraEventLog;
         }
+
         public RCException(string message, HttpStatusCode statusCode, bool geraEventLog = false) : base(message)
         {
             GeraEventLog = geraEventLog;

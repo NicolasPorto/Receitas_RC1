@@ -7,12 +7,12 @@ namespace Order.Application.Interfaces.Services
 {
     public interface IRecipeApplicationService
     {
-        Task<RecipeResponse> CadastrarReceita(RecipeRequest recipe);
-        Task<RecipeResponse> AlterarReceita(RecipeRequest recipe);
-        Task DeletarReceita(Guid recipeCode);
-        Task<RecipeResponse> GetReceitaByCode(Guid recipeCode);
-        Task CadastrarImagem(RecipeImageRequest request);
-        Task DeletarImagem(Guid codigoImage);
-        Task<RecipeImageResponse> GetImageByCode(Guid codigoImage);
+        Task<RecipeResponse> RegisterRecipe(RecipeRequest recipe);
+        Task<RecipeResponse> ChangeRecipe(RecipeRequest recipe);
+        Task DeleteRecipe(Guid recipeCode);
+        Task<RecipeResponse> SearchRecipeByCode(Guid recipeCode);
+        Task RegisterImage(RecipeImageRequest request);
+        Task DeleteImagem(Guid imageCode);
+        Task<RecipeImageResponse> GetImageByCode(Guid imageCode);
     }
 }
