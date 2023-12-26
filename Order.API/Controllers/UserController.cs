@@ -18,7 +18,7 @@ namespace Order.API.Controllers
             _userApplicationService = userApplicationService;
         }
 
-        [HttpGet("{code}")]
+        [HttpGet("{userCode}")]
         public async Task<ActionResult<UserResponse>> GetUserByCode(Guid userCode)
         {
             try
@@ -34,7 +34,7 @@ namespace Order.API.Controllers
             {
                 return BadRequest(ResponseBase.ErrorHandled(ex));
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, ResponseBase.GenericError());
             }
@@ -84,7 +84,7 @@ namespace Order.API.Controllers
             }
         }
 
-        [HttpDelete("{code}")]
+        [HttpDelete("{userCode}")]
         public async Task<ActionResult> DeleteUser(Guid userCode)
         {
             try

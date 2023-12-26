@@ -1,4 +1,5 @@
 ﻿using Order.Domain.Models;
+using Order.Infra.Enums;
 
 namespace Order.Domain.Entities
 {
@@ -9,5 +10,6 @@ namespace Order.Domain.Entities
         public string Password { get; set; }
         public string Gender { get; set; }
         public DateTime BirthDate { get; set; }
+        public Situation Situation { get; set; }
     }
 }

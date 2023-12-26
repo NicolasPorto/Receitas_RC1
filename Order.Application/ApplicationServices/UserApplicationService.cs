@@ -46,7 +46,7 @@ namespace Order.Application.ApplicationServices
             if (errors.Report.Count > 0)
                 throw new RCException(errors.Report.First().Message);
 
-            var exists = await _userRepository.ExistById(userRequest.Codigo);
+            var exists = await _userRepository.ExistById(userRequest.Code);
 
             if(!exists)
                 throw new RCException("User not found.");

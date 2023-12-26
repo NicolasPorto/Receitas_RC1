@@ -2,7 +2,7 @@
 {
     public abstract class EntityBase
     {
-        public Guid Codigo { get; set; }
+        public Guid Code { get; set; }
         public DateTime CreateAt { get; set; }
     }
 }
