@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "+P22b2BbUPXCB4dc1oCiG3A630CIaFgj54m3ZlRbVVEkgXRjYVs9cUGMrk/5VQ1Watq0ZsdG/LX7YJboTv1nTg==",
+  "success": true,
+  "projectFilePath": "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.Domain\\RC1.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nicol\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\nicol\\.nuget\\packages\\dapper\\2.0.78\\dapper.2.0.78.nupkg.sha512",
+    "C:\\Users\\nicol\\.nuget\\packages\\dapper.contrib\\2.0.78\\dapper.contrib.2.0.78.nupkg.sha512",
+    "C:\\Users\\nicol\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
+    "C:\\Users\\nicol\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

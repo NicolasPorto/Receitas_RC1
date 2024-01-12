@@ -69,17 +69,17 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
-      "Order.Infra/1.0.0": {
+      "RC1.Infra/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Dapper.Contrib": "2.0.78"
         },
         "compile": {
-          "bin/placeholder/Order.Infra.dll": {}
+          "bin/placeholder/RC1.Infra.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Order.Infra.dll": {}
+          "bin/placeholder/RC1.Infra.dll": {}
         }
       }
     }
@@ -226,10 +226,10 @@
         "version.txt"
       ]
     },
-    "Order.Infra/1.0.0": {
+    "RC1.Infra/1.0.0": {
       "type": "project",
-      "path": "../Order.Infra/Order.Infra.csproj",
-      "msbuildProject": "../Order.Infra/Order.Infra.csproj"
+      "path": "../Order.Infra/RC1.Infra.csproj",
+      "msbuildProject": "../Order.Infra/RC1.Infra.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -237,7 +237,7 @@
       "AutoMapper >= 12.0.1",
       "Dapper.Contrib >= 2.0.78",
       "FluentValidation >= 11.5.2",
-      "Order.Infra >= 1.0.0"
+      "RC1.Infra >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -246,9 +246,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.Domain\\Order.Domain.csproj",
-      "projectName": "Order.Domain",
-      "projectPath": "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.Domain\\Order.Domain.csproj",
+      "projectUniqueName": "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.Domain\\RC1.Domain.csproj",
+      "projectName": "RC1.Domain",
+      "projectPath": "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.Domain\\RC1.Domain.csproj",
       "packagesPath": "C:\\Users\\nicol\\.nuget\\packages\\",
       "outputPath": "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.Domain\\obj\\",
       "projectStyle": "PackageReference",
@@ -267,8 +267,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.Infra\\Order.Infra.csproj": {
-              "projectPath": "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.Infra\\Order.Infra.csproj"
+            "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.Infra\\RC1.Infra.csproj": {
+              "projectPath": "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.Infra\\RC1.Infra.csproj"
             }
           }
         }

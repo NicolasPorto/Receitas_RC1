@@ -51,7 +51,7 @@ namespace Order.Application.ApplicationServices
             if(!exists)
                 throw new RCException("User not found.");
 
-            await _userRepository.Update(userRequest);
+            _userRepository.Update(userRequest);
 
             return _mapper.Map<UserResponse>(userRequest);
         }

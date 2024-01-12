@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Order.API", "Order.API\Order.API.csproj", "{CF4C6C76-43F7-41ED-BE91-EF2E1025D226}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RC1.API", "Order.API\RC1.API.csproj", "{CF4C6C76-43F7-41ED-BE91-EF2E1025D226}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Order.Domain", "Order.Domain\Order.Domain.csproj", "{E349EA31-D5D7-4E12-B0F1-7B2069E8A435}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RC1.Domain", "Order.Domain\RC1.Domain.csproj", "{E349EA31-D5D7-4E12-B0F1-7B2069E8A435}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Order.Application", "Order.Application\Order.Application.csproj", "{765FC70B-3B22-4BA7-B41F-486BAAE02B26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RC1.Application", "Order.Application\RC1.Application.csproj", "{765FC70B-3B22-4BA7-B41F-486BAAE02B26}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Order.Infra", "Order.Infra\Order.Infra.csproj", "{D4616B5E-01F6-4240-BB5F-FEB2D1920580}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RC1.Infra", "Order.Infra\RC1.Infra.csproj", "{D4616B5E-01F6-4240-BB5F-FEB2D1920580}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Order.Data", "Order.Data\Order.Data.csproj", "{87103219-4CD9-4292-821E-2B1CAB21A30A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RC1.Data", "Order.Data\RC1.Data.csproj", "{87103219-4CD9-4292-821E-2B1CAB21A30A}"
 	ProjectSection(ProjectDependencies) = postProject
 		{E349EA31-D5D7-4E12-B0F1-7B2069E8A435} = {E349EA31-D5D7-4E12-B0F1-7B2069E8A435}
 	EndProjectSection

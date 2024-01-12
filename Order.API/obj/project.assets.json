@@ -389,62 +389,62 @@
           }
         }
       },
-      "Order.Application/1.0.0": {
+      "RC1.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "AutoMapper": "12.0.1",
-          "Order.Domain": "1.0.0",
-          "Order.Infra": "1.0.0"
+          "RC1.Domain": "1.0.0",
+          "RC1.Infra": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/Order.Application.dll": {}
+          "bin/placeholder/RC1.Application.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Order.Application.dll": {}
+          "bin/placeholder/RC1.Application.dll": {}
         }
       },
-      "Order.Data/1.0.0": {
+      "RC1.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Order.Domain": "1.0.0",
+          "RC1.Domain": "1.0.0",
           "System.Data.SqlClient": "4.8.5"
         },
         "compile": {
-          "bin/placeholder/Order.Data.dll": {}
+          "bin/placeholder/RC1.Data.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Order.Data.dll": {}
+          "bin/placeholder/RC1.Data.dll": {}
         }
       },
-      "Order.Domain/1.0.0": {
+      "RC1.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "AutoMapper": "12.0.1",
           "Dapper.Contrib": "2.0.78",
           "FluentValidation": "11.5.2",
-          "Order.Infra": "1.0.0"
+          "RC1.Infra": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/Order.Domain.dll": {}
+          "bin/placeholder/RC1.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Order.Domain.dll": {}
+          "bin/placeholder/RC1.Domain.dll": {}
         }
       },
-      "Order.Infra/1.0.0": {
+      "RC1.Infra/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Dapper.Contrib": "2.0.78"
         },
         "compile": {
-          "bin/placeholder/Order.Infra.dll": {}
+          "bin/placeholder/RC1.Infra.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Order.Infra.dll": {}
+          "bin/placeholder/RC1.Infra.dll": {}
         }
       }
     }
@@ -1220,35 +1220,35 @@
         "version.txt"
       ]
     },
-    "Order.Application/1.0.0": {
+    "RC1.Application/1.0.0": {
       "type": "project",
-      "path": "../Order.Application/Order.Application.csproj",
-      "msbuildProject": "../Order.Application/Order.Application.csproj"
+      "path": "../Order.Application/RC1.Application.csproj",
+      "msbuildProject": "../Order.Application/RC1.Application.csproj"
     },
-    "Order.Data/1.0.0": {
+    "RC1.Data/1.0.0": {
       "type": "project",
-      "path": "../Order.Data/Order.Data.csproj",
-      "msbuildProject": "../Order.Data/Order.Data.csproj"
+      "path": "../Order.Data/RC1.Data.csproj",
+      "msbuildProject": "../Order.Data/RC1.Data.csproj"
     },
-    "Order.Domain/1.0.0": {
+    "RC1.Domain/1.0.0": {
       "type": "project",
-      "path": "../Order.Domain/Order.Domain.csproj",
-      "msbuildProject": "../Order.Domain/Order.Domain.csproj"
+      "path": "../Order.Domain/RC1.Domain.csproj",
+      "msbuildProject": "../Order.Domain/RC1.Domain.csproj"
     },
-    "Order.Infra/1.0.0": {
+    "RC1.Infra/1.0.0": {
       "type": "project",
-      "path": "../Order.Infra/Order.Infra.csproj",
-      "msbuildProject": "../Order.Infra/Order.Infra.csproj"
+      "path": "../Order.Infra/RC1.Infra.csproj",
+      "msbuildProject": "../Order.Infra/RC1.Infra.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.17.2",
-      "Order.Application >= 1.0.0",
-      "Order.Data >= 1.0.0",
-      "Order.Domain >= 1.0.0",
-      "Order.Infra >= 1.0.0",
+      "RC1.Application >= 1.0.0",
+      "RC1.Data >= 1.0.0",
+      "RC1.Domain >= 1.0.0",
+      "RC1.Infra >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -1258,9 +1258,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.API\\Order.API.csproj",
-      "projectName": "Order.API",
-      "projectPath": "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.API\\Order.API.csproj",
+      "projectUniqueName": "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.API\\RC1.API.csproj",
+      "projectName": "RC1.API",
+      "projectPath": "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.API\\RC1.API.csproj",
       "packagesPath": "C:\\Users\\nicol\\.nuget\\packages\\",
       "outputPath": "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.API\\obj\\",
       "projectStyle": "PackageReference",
@@ -1279,17 +1279,17 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.Application\\Order.Application.csproj": {
-              "projectPath": "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.Application\\Order.Application.csproj"
+            "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.Application\\RC1.Application.csproj": {
+              "projectPath": "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.Application\\RC1.Application.csproj"
             },
-            "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.Data\\Order.Data.csproj": {
-              "projectPath": "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.Data\\Order.Data.csproj"
+            "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.Data\\RC1.Data.csproj": {
+              "projectPath": "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.Data\\RC1.Data.csproj"
             },
-            "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.Domain\\Order.Domain.csproj": {
-              "projectPath": "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.Domain\\Order.Domain.csproj"
+            "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.Domain\\RC1.Domain.csproj": {
+              "projectPath": "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.Domain\\RC1.Domain.csproj"
             },
-            "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.Infra\\Order.Infra.csproj": {
-              "projectPath": "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.Infra\\Order.Infra.csproj"
+            "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.Infra\\RC1.Infra.csproj": {
+              "projectPath": "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.Infra\\RC1.Infra.csproj"
             }
           }
         }

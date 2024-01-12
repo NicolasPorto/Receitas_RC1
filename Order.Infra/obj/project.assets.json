@@ -80,9 +80,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.Infra\\Order.Infra.csproj",
-      "projectName": "Order.Infra",
-      "projectPath": "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.Infra\\Order.Infra.csproj",
+      "projectUniqueName": "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.Infra\\RC1.Infra.csproj",
+      "projectName": "RC1.Infra",
+      "projectPath": "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.Infra\\RC1.Infra.csproj",
       "packagesPath": "C:\\Users\\nicol\\.nuget\\packages\\",
       "outputPath": "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.Infra\\obj\\",
       "projectStyle": "PackageReference",

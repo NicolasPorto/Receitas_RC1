@@ -214,33 +214,33 @@
           }
         }
       },
-      "Order.Domain/1.0.0": {
+      "RC1.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "AutoMapper": "12.0.1",
           "Dapper.Contrib": "2.0.78",
           "FluentValidation": "11.5.2",
-          "Order.Infra": "1.0.0"
+          "RC1.Infra": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/Order.Domain.dll": {}
+          "bin/placeholder/RC1.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Order.Domain.dll": {}
+          "bin/placeholder/RC1.Domain.dll": {}
         }
       },
-      "Order.Infra/1.0.0": {
+      "RC1.Infra/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Dapper.Contrib": "2.0.78"
         },
         "compile": {
-          "bin/placeholder/Order.Infra.dll": {}
+          "bin/placeholder/RC1.Infra.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Order.Infra.dll": {}
+          "bin/placeholder/RC1.Infra.dll": {}
         }
       }
     }
@@ -700,20 +700,20 @@
         "version.txt"
       ]
     },
-    "Order.Domain/1.0.0": {
+    "RC1.Domain/1.0.0": {
       "type": "project",
-      "path": "../Order.Domain/Order.Domain.csproj",
-      "msbuildProject": "../Order.Domain/Order.Domain.csproj"
+      "path": "../Order.Domain/RC1.Domain.csproj",
+      "msbuildProject": "../Order.Domain/RC1.Domain.csproj"
     },
-    "Order.Infra/1.0.0": {
+    "RC1.Infra/1.0.0": {
       "type": "project",
-      "path": "../Order.Infra/Order.Infra.csproj",
-      "msbuildProject": "../Order.Infra/Order.Infra.csproj"
+      "path": "../Order.Infra/RC1.Infra.csproj",
+      "msbuildProject": "../Order.Infra/RC1.Infra.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Order.Domain >= 1.0.0",
+      "RC1.Domain >= 1.0.0",
       "System.Data.SqlClient >= 4.8.5"
     ]
   },
@@ -723,9 +723,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.Data\\Order.Data.csproj",
-      "projectName": "Order.Data",
-      "projectPath": "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.Data\\Order.Data.csproj",
+      "projectUniqueName": "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.Data\\RC1.Data.csproj",
+      "projectName": "RC1.Data",
+      "projectPath": "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.Data\\RC1.Data.csproj",
       "packagesPath": "C:\\Users\\nicol\\.nuget\\packages\\",
       "outputPath": "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.Data\\obj\\",
       "projectStyle": "PackageReference",
@@ -744,8 +744,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.Domain\\Order.Domain.csproj": {
-              "projectPath": "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.Domain\\Order.Domain.csproj"
+            "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.Domain\\RC1.Domain.csproj": {
+              "projectPath": "D:\\Users\\nicolas\\Desktop\\Projetos\\Projeto RC1\\RC1_Receitas\\Order.Domain\\RC1.Domain.csproj"
             }
           }
         }
